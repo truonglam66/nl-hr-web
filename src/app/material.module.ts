@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule, MatCardTitle } from '@angular/material/card';
 import { MatFormField, MatInputModule } from '@angular/material/input';
@@ -9,6 +10,7 @@ const modules = [
   MatButtonModule,
   MatFormField,
   MatCardTitle,
+  ReactiveFormsModule,
 ];
 
 @NgModule({

@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule } from '@angular/router';
+import { RouterModule, RouterOutlet } from '@angular/router';
 
 // Import các module khác
 import { HttpClientModule } from '@angular/common/http'; // Nếu bạn cần làm việc với HTTP
 import { FormsModule } from '@angular/forms'; // Nếu bạn cần sử dụng forms
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; // Nếu bạn cần animations
 
 // Import routes
 import { routes } from './app.routes'; // Đảm bảo đường dẫn đúng
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -18,7 +18,8 @@ import { routes } from './app.routes'; // Đảm bảo đường dẫn đúng
     BrowserModule,
     HttpClientModule,
     FormsModule,
-    BrowserAnimationsModule,
+    CommonModule,
+    RouterOutlet,
     RouterModule.forRoot(routes), // Cấu hình router
   ],
   providers: [],

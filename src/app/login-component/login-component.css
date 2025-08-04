@@ -4,9 +4,20 @@
   margin: 100px 0px;
 }
 
-.mat-form-field {
+/* .mat-form-field {
   width: 100%;
   min-width: 300px;
+} */
+
+.mat-mdc-form-field {
+  width: 300px;
+  min-width: 300px;
+}
+
+.mat-mdc-card {
+  width: 365px;
+  min-width: 360px;
+  padding: 16px;
 }
 
 mat-card-title,
@@ -25,4 +36,28 @@ mat-card-content {
 .button {
   display: flex;
   justify-content: flex-end;
+}
+
+.video-background {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: 1vw;
+  height: 1vh;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+}
+
+.header {
+  margin: auto;
+  text-align: center;
+  font-size: 24px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #ffff;
+}
+
+.footer {
+  color: #ffff;
 }

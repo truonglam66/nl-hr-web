@@ -1,39 +1,46 @@
 <div>
-  <mat-card><mat-card-title>Login</mat-card-title></mat-card>
-  <!-- <form [formGroup]="form" (ngSubmit)="submit()"> -->
-  <form (ngSubmit)="submit()">
-    <p>
-      <mat-form-field>
-        <input
-          type="text"
-          matInput
-          placeholder="Username"
-          formControlName="username"
-        />
-      </mat-form-field>
-    </p>
-    <br />
-    <p>
-      <mat-form-field>
-        <input
-          type="password"
-          matInput
-          placeholder="Password"
-          formControlName="password"
-        />
-      </mat-form-field>
-    </p>
-
-    <!-- <p *ngIf="error" class="error">
+  <div class="header">
+    <h1>NL-HR-WEB</h1>
+  </div>
+  <video autoplay muted loop class="video-background">
+    <source src="assets/loggin-background-video.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+  <div>
+    <mat-card
+      ><mat-card-title>Login</mat-card-title>
+      <mat-card-content>
+        <form [formGroup]="form" (ngSubmit)="submit()">
+          <mat-form-field>
+            <input
+              id="username"
+              type="text"
+              matInput
+              placeholder="Username"
+              formControlName="username"
+            />
+          </mat-form-field>
+          <mat-form-field>
+            <input
+              id="password"
+              type="password"
+              matInput
+              placeholder="Password"
+              formControlName="password"
+            />
+          </mat-form-field>
+          <!-- <p *ngIf="error" class="error">
       {{ error }}
     </p> -->
-    <br />
-
-    <div class="button">
-      <button type="submit" mat-button>Login</button>
-    </div>
-  </form>
-  <p>Don't have an account? <a routerLink="/register">Register here</a></p>
-  <p><a routerLink="/forgot-password">Forgot Password?</a></p>
-  <p><a routerLink="/privacy">Privacy Policy</a></p>
+          <div class="button">
+            <button type="submit" mat-button>Login</button>
+          </div>
+        </form>
+      </mat-card-content>
+    </mat-card>
+    <!-- <p>Don't have an account? <a routerLink="/register">Register here</a></p> -->
+    <p class="footer"><a routerLink="/forgot-password">Forgot Password?</a></p>
+    <p class="footer"><a routerLink="/change-password">Change Password?</a></p>
+    <!-- <p><a routerLink="/privacy">Privacy Policy</a></p> -->
+  </div>
 </div>
