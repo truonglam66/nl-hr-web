@@ -1,0 +1,30 @@
+<div class="layout-container">
+  <div>
+    <span>#logo is here</span>
+    <nav>
+      <mat-list>
+        <mat-list-item>
+          <a routerLink="/">Home</a>
+        </mat-list-item>
+        <mat-list-item>
+          <a routerLink="/dashboard">Dashboard</a>
+        </mat-list-item>
+        <mat-list-item>
+          <a routerLink="/manager">Quản lý</a>
+        </mat-list-item>
+        <mat-list-item>
+          <a routerLink="/employee-attendance">Chấm công</a>
+        </mat-list-item>
+        <mat-list-item>
+          <a routerLink="/nofifications">Thông báo</a>
+        </mat-list-item>
+        <mat-list-item>
+          <a routerLink="/survey">Khảo sát</a>
+        </mat-list-item>
+      </mat-list>
+    </nav>
+  </div>
+  <main>
+    <router-outlet></router-outlet>
+  </main>
+</div>

@@ -1,0 +1,19 @@
+.layout-container {
+  display: flex;
+  width: 100%;
+}
+
+.layout-container > div {
+  box-sizing: border-box;
+}
+
+main {
+  width: 80vw;
+  background-color: lightgreen;
+  margin-left: 20px; /* Khoảng cách từ bên trái */
+  text-align: center;
+}
+
+.layout-container > div:first-child {
+  background-color: lightblue; /* Màu nền cho div đầu tiên (tùy chọn) */
+}

@@ -1,12 +1,19 @@
 import { RouterModule, Routes } from '@angular/router';
-import { LayoutComponent } from './layout-component/layout-component';
+import { LayoutComponent } from './layout/layout.component';
 import { NgModule } from '@angular/core';
+import { LoginComponent } from './login/login.component';
+import { ManagerComponent } from './manager-component/manager-component';
 
 export const routes: Routes = [
   {
+    path: '',
+    redirectTo: '/login',
+    pathMatch: 'full',
+  },
+  {
     path: 'login',
     loadComponent: () =>
-      import('./login-component/login-component').then((m) => m.LoginComponent),
+      import('./login/login.component').then((m) => m.LoginComponent),
   },
   {
     path: '',
@@ -57,7 +64,7 @@ export const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes), RouterModule.forChild(routes)],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}

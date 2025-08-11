@@ -29,9 +29,9 @@
               formControlName="password"
             />
           </mat-form-field>
-          <!-- <p *ngIf="error" class="error">
-      {{ error }}
-    </p> -->
+          <p *ngIf="error" class="error">
+            {{ "Login error, please try again! Error:" + error }}
+          </p>
           <div class="button">
             <button type="submit" mat-button>Login</button>
           </div>
