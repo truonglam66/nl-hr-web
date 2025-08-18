@@ -1,0 +1,19 @@
+table {
+  width: 100%;
+}
+
+button {
+  margin: 2px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.example-container {
+  height: 400px;
+  overflow: auto;
+  margin: 10px;
+}
