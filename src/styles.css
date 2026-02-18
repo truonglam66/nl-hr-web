@@ -7,7 +7,7 @@ Copier
 }
 
 .mat-mdc-header-cell {
-  background-color: #f0f0f0 !important; /* Màu nền cho tiêu đề cột */
+  background-color: #f0f0f0; /* Màu nền cho tiêu đề cột */
 }
 
 /* Định dạng hàng chẵn */

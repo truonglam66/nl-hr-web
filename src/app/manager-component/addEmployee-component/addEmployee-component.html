@@ -1,0 +1,29 @@
+<h2 mat-dialog-title>Thêm nhân viên</h2>
+<mat-dialog-content>
+  <div
+    style="
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      min-width: 300px;
+      padding-top: 10px;
+    "
+  >
+    <mat-form-field appearance="outline">
+      <mat-label>Họ và tên</mat-label>
+      <input matInput [(ngModel)]="data.name" maxlength="64" />
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Phòng ban</mat-label>
+      <mat-select [(ngModel)]="data.office"> </mat-select>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Vị trí</mat-label>
+      <mat-select [(ngModel)]="data.position"> </mat-select>
+    </mat-form-field>
+  </div>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button (click)="onNoClick()">Hủy</button>
+  <button mat-button [mat-dialog-close]="data" cdkFocusInitial>Lưu</button>
+</mat-dialog-actions>
